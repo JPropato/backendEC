@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #f8f9fd;
+    background-image: url(../img/images/Vegetables.png);
+}
+
+main{
+    z-index: 500;
+    background-color: #f8f9fd;
+}

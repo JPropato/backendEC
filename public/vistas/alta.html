@@ -1,0 +1,62 @@
+<div class="alta-main">
+    <form class="form__alta" autocomplete="off">
+        <div class="container-alta">
+            <h1>Alta</h1>
+
+            <!-- Campo de nombre -->
+            <label for="nombre">Nombre</label>
+            <input class="data-validacion input-alta" id="nombre" type="text">
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de precio -->
+            <label for="precio">Precio</label>
+            <input class="data-validacion input-alta" id="precio" type="text">
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de stock -->
+            <label for="stock">Stock</label>
+            <input class="data-validacion input-alta" id="stock" type="text">
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de marca -->
+            <label for="marca">Marca</label>
+            <input class="data-validacion input-alta" id="marca" type="text">
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de categoria -->
+            <label for="categoria">Categoria</label>
+            <input class="data-validacion input-alta" id="categoria" type="text">
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de origen -->
+            <label for="origen">Origen</label>
+            <input class="data-validacion input-alta" id="origen" type="text">
+            <div class="mensaje-validacion"></div>
+
+            <!-- Campo de foto -->
+            <!-- <label for="foto">Foto</label>
+            <input class="data-validacion input-alta" id="foto" type="text">
+            <div class="mensaje-validacion"></div> -->
+
+            <div id="drop-area">
+                <p>Subir imágen al servidor con <b>file dialog</b> ó con <b>drag and drop</b> dentro del área punteada</p>
+                <br>
+    
+                <input id="foto" type="file" accept="image/*" onchange="formularioAlta.handleFiles(this.files)">
+                <label class="button" for="foto">File dialog</label>
+                <br><br>
+    
+                <progress id="progress-bar" max="100" value="0"></progress>
+                <div id="gallery"><img src="" alt=""></div>
+            </div>
+
+            <button class="button-agregar-producto">Agregar</button>
+            
+        </div>
+    </form>  
+    
+    <div class="render-productos">
+        <h1>Listado de productos</h1>
+        <div id="listado-productos"></div>
+    </div>
+</div>

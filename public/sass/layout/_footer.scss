@@ -1,0 +1,86 @@
+footer {
+    background-color: #1b1d1f;
+    padding: 50px 20px;
+    border-top: 5px solid #4eb060;
+}
+
+.footer__content{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1em;
+
+        &--logo{
+
+            
+                a{
+                    color: #ffffff;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                }
+
+                span{
+                    color: #4eb060;
+                }
+
+                    &--social{
+                        display: flex;
+                        margin-top: 10px;
+            
+                            a{
+                                width: 40px;
+                                height: 40px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: #ffffff;
+                                border: 1px solid #ffffff15;
+                                font-size: 0.9rem;
+                                margin: 0px 5px;
+
+
+                                    &:hover{
+                                        background-color: #4eb060;
+                                        transition: all ease 0.3s;
+                                    }
+                            }
+                    }
+        }
+
+        &--links{
+            
+            strong{
+                color: #ffffff;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+
+            ul{
+                margin-top: 10px;
+                list-style: none;
+            }
+
+            ul li a {
+                text-decoration: none;
+                color: #ffffff;
+                opacity: 0.5;
+                margin: 4px 0px;
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+                transition: all ease 0.3s;
+            }
+
+            li a:hover{
+                opacity: 1;
+                transition: all ease 0.3s;
+            }
+    }
+        
+       
+}
+

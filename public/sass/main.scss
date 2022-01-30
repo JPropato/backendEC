@@ -1,0 +1,22 @@
+@import 'abstracts/variables';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'base/base';
+
+@import 'components/card';
+@import 'components/form';
+@import 'components/contact';
+@import 'components/about-us';
+@import 'components/carrito';
+@import 'components/alta';
+@import 'components/pago';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+
+
+@import 'pages/index';
+@import 'pages/responsive';

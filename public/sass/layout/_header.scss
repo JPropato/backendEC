@@ -1,0 +1,170 @@
+/*********************************
+            HEADER
+*********************************/
+.main-header {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    display: none;
+}
+
+.selected {
+    color: #40aa54;
+    transition: all ease 0.3s;
+}
+
+/*********************************
+            NAV BAR
+*********************************/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 35px 15px;
+    max-width: 1070px;
+    width: 100%;
+    margin: auto;
+
+        &__logo{
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #202020;
+        }
+
+        &__logo span{
+            color: #40aa54;
+        }
+
+
+        &__nav-list {
+            display: flex;
+            list-style-type: none;
+
+                li a {
+                    text-decoration: none;
+                    padding: 3px 10px;
+                    margin: 0px 15px;
+                    color: #3b3b3b;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                    transition: all ease 0.3s;
+                }
+
+                a:hover {
+                    color: #40aa54;
+                }
+        }
+
+
+        &__right-nav{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 25px;
+
+                & a{
+                    width:40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    position: relative;
+                }
+
+                &--like {
+                    background-color: #fff0ee;
+                    color: #ff6c57;
+                }
+
+                &--cart{
+                    background-color: #ecf7ee;
+                    color: #4eb060;
+                }
+
+
+        }
+
+
+
+        
+}
+
+
+/*********************************
+SEARCH BAR
+*********************************/
+
+.search-banner{
+    height: 100px;
+    border-radius: 30px;
+    background-color: #ecf7ee;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+
+        &-text{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+                h1{
+    
+                    font-size: 2.5em;
+                    line-height: 55px;
+                    color: #202020;
+                }
+
+                strong{
+    
+                    color: #4eb060;
+                    font-size: 1.4rem;
+                    margin-top: 4px;
+                }
+     
+        }
+}
+
+.search-box{
+    background-color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px 0px 20px;
+    border-radius: 30px;
+    margin: auto;
+
+        i{
+            font-size: 1.3rem;
+            color: #3b3b3b;
+            margin: 0px 10px;
+        }
+
+        .search-input{
+            height: 40px;
+            border: none;
+            width: 100%;
+            padding: 0px 10px;
+            outline: none;
+        }
+
+        & .search-btn{
+            width: 150px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: #4eb060;
+            border: none;
+            color: #ffffff;
+            outline: none;
+            cursor: pointer;
+            transition: all ease 0.3s;
+
+                &:hover{
+                    background-color: #5ccf71;
+                    transition: all ease 0.3s;
+                }
+        }
+}

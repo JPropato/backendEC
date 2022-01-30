@@ -1,0 +1,42 @@
+{{#if productos.length }}
+    <table class="table">
+        <thead>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Marca</th>
+            <th>Categoria</th>
+            <th>Origen</th>
+            <th>Foto</th>
+            <th>Acción</th>
+        </thead>
+        {{#each productos}}
+            <div class="accordion">
+                <tr>
+                    <td class="data-label">{{nombre}}</td>
+                    <td>{{precio}}</td>
+                    <td>{{stock}}</td>
+                    <td>{{marca}}</td>
+                    <td>{{categoria}}</td>
+                    <td>{{origen}}</td>
+                    <td>
+                        <img style="margin: 0 auto;" src="{{foto}}" width="50" alt="{{nombre}}"> 
+                    </td>
+                    {{#if envio}}
+                    {{else}}
+                    {{/if}}
+                    <td>
+                        {{#if ../validos}}
+                            <button class="button-actualizar-producto" onclick="productoController.actualizarProducto('{{id}}')">Actualizar</button>
+                        {{else}}
+                            <button class="button-actualizar-producto" disabled onclick="productoController.actualizarProducto('{{id}}')">Actualizar</button>
+                        {{/if}}
+                        <button class="button-borrar-producto" onclick="productoController.borrarProducto('{{id}}')">Borrar</button>
+                    </td>
+                </tr>
+            </div>
+        {{/each}}
+    </table>
+{{else}}
+    <h2>No se encontraron productos</h2>
+{{/if}}
