@@ -1,0 +1,5 @@
+"dev1": "set PORT=9000&set TIPO_P=FILE&nodemon server.js",
+"prod1": "set PORT=5000&set TIPO_P=MONGODB&set CNX=mongodb://localhost/ecommerce&node server.js",
+"dev2": "node server.js",
+"dev": "set NODE_ENV=development&nodemon server.js",
+"prod": "set NODE_ENV=production&node server.js"
