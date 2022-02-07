@@ -1,5 +1,5 @@
 // Agrega credenciales de SDK
-const mercadopago = new MercadoPago("CLAVE PÚBLICA MERCADO PAGO", {
+const mercadopago = new MercadoPago("TEST-f8e075f7-32c1-4b17-8442-b7805b8976e0", {
     locale: "es-AR",
 });
 
